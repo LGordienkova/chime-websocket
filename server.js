@@ -3,7 +3,7 @@ import AWS from 'aws-sdk';
 import { randomUUID } from 'crypto';
 import { WebSocketServer } from 'ws';
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 const currentRegion = 'us-east-1';
 const wsUsers = {};
 
